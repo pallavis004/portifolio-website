@@ -218,6 +218,24 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Active nav link */
+nav ul li a.active {
+  color: #7c6af7;
+  font-weight: 600;
+}
+
+/* Scroll reveal */
+.section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   nav {
