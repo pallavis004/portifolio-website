@@ -64,7 +64,7 @@
       <div class="project-card">
         <h3>Placement Prediction & Analysis</h3>
         <p>A data-driven project that predicts student placement outcomes based on academic performance and skills. Analyzes key factors that influence campus placements.</p>
-        <a href="#" class="btn small">View Project</a>
+        <button class="btn small" onclick="openModal('placement-modal')">View Project</button>
       </div>
       <div class="project-card">
         <h3>Sentinel-AI</h3>
@@ -88,6 +88,90 @@
   <footer>
     <p>&copy; 2026 Pallavi S Nair. All rights reserved.</p>
   </footer>
+
+  <!-- Placement Prediction Modal -->
+  <div id="placement-modal" class="modal-overlay" onclick="closeModalOutside(event, 'placement-modal')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('placement-modal')">&times;</button>
+      <h2>Placement Prediction & Analysis</h2>
+
+      <p class="modal-intro">A machine learning-based system that predicts whether a student is likely to be placed based on academic performance, skills, and other relevant factors — helping students understand their placement readiness and enabling institutions to make data-driven decisions.</p>
+
+      <div class="modal-section">
+        <h4>Objectives</h4>
+        <ul>
+          <li>Predict student placement outcomes using historical placement data</li>
+          <li>Identify factors that influence placement success</li>
+          <li>Assist students in improving employability skills</li>
+          <li>Support colleges in data-driven training and placement decisions</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h4>Dataset Features</h4>
+        <ul>
+          <li>Academic scores (10th, 12th, CGPA)</li>
+          <li>Degree specialization</li>
+          <li>Communication & technical skills</li>
+          <li>Internship experience & certifications</li>
+          <li>Placement status (Placed / Not Placed)</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h4>ML Algorithms Used</h4>
+        <div class="modal-tags">
+          <span>Logistic Regression</span>
+          <span>Decision Tree</span>
+          <span>Random Forest</span>
+          <span>Support Vector Machine (SVM)</span>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <h4>Evaluation Metrics</h4>
+        <div class="modal-tags">
+          <span>Accuracy</span>
+          <span>Precision</span>
+          <span>Recall</span>
+          <span>F1-Score</span>
+          <span>Confusion Matrix</span>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <h4>Key Insights</h4>
+        <ul>
+          <li>Identifies key academic and skill factors affecting placements</li>
+          <li>Reveals the relationship between CGPA and placement probability</li>
+          <li>Measures the impact of internships and certifications on employability</li>
+          <li>Uncovers trends and patterns in historical placement data</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h4>Methodology</h4>
+        <ol>
+          <li>Data Collection</li>
+          <li>Preprocessing — missing values, encoding, feature scaling</li>
+          <li>Exploratory Data Analysis (EDA)</li>
+          <li>Model Training & Evaluation</li>
+          <li>Prediction and Result Analysis</li>
+        </ol>
+      </div>
+
+      <div class="modal-section">
+        <h4>Future Enhancements</h4>
+        <ul>
+          <li>Integration with real-time student databases</li>
+          <li>Personalized placement recommendations</li>
+          <li>Resume analysis and skill-gap detection</li>
+          <li>Job role recommendation system</li>
+          <li>Web-based dashboard for visualization and reporting</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
