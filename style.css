@@ -326,6 +326,49 @@ nav ul li a.active {
   gap: 0.5rem;
 }
 
+.modal-subtitle {
+  color: #7c6af7;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+
+.modal-body-text {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.modal-features {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.feature-item {
+  background: #f8f7ff;
+  border-left: 3px solid #7c6af7;
+  border-radius: 0 8px 8px 0;
+  padding: 0.65rem 1rem;
+}
+
+.feature-title {
+  display: block;
+  font-weight: 700;
+  color: #1a1a2e;
+  font-size: 0.92rem;
+  margin-bottom: 0.2rem;
+}
+
+.feature-desc {
+  display: block;
+  color: #666;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
 .modal-tags span {
   background-color: #f0eeff;
   color: #7c6af7;

@@ -69,7 +69,7 @@
       <div class="project-card">
         <h3>Sentinel-AI</h3>
         <p>A human-centric cybersecurity companion powered by AI. Designed to detect threats, guide users through security decisions, and make cybersecurity accessible to everyone.</p>
-        <a href="#" class="btn small">View Project</a>
+        <button class="btn small" onclick="openModal('sentinel-modal')">View Project</button>
       </div>
     </div>
   </section>
@@ -169,6 +169,98 @@
           <li>Job role recommendation system</li>
           <li>Web-based dashboard for visualization and reporting</li>
         </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sentinel-AI Modal -->
+  <div id="sentinel-modal" class="modal-overlay" onclick="closeModalOutside(event, 'sentinel-modal')">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('sentinel-modal')">&times;</button>
+      <h2>Sentinel-AI</h2>
+      <p class="modal-subtitle">Human-Centric Cybersecurity Companion Powered by AI</p>
+
+      <p class="modal-intro">An intelligent cybersecurity companion designed to help individuals and organizations stay safe in the digital world. Unlike traditional security tools, Sentinel-AI takes a human-centric approach — providing clear guidance, personalized recommendations, and real-time assistance to bridge the gap between complex threats and everyday users.</p>
+
+      <div class="modal-section">
+        <h4>Problem Statement</h4>
+        <p class="modal-body-text">Cybersecurity threats such as phishing attacks, malware, identity theft, and online scams are becoming increasingly sophisticated. Many users lack the technical knowledge to identify and respond effectively. Sentinel-AI acts as a trusted digital security assistant that helps users make informed, confident security decisions.</p>
+      </div>
+
+      <div class="modal-section">
+        <h4>Objectives</h4>
+        <ul>
+          <li>Detect potential cybersecurity threats in real time</li>
+          <li>Provide users with understandable security recommendations</li>
+          <li>Identify phishing emails, malicious links, and suspicious activities</li>
+          <li>Improve cybersecurity awareness through interactive guidance</li>
+          <li>Reduce the risk of human error in security-related decisions</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h4>Key Features</h4>
+        <div class="modal-features">
+          <div class="feature-item">
+            <span class="feature-title">AI-Powered Threat Detection</span>
+            <span class="feature-desc">Identifies suspicious emails, websites, files, and network activities using intelligent algorithms.</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-title">Phishing Detection</span>
+            <span class="feature-desc">Analyzes URLs, email content, and sender information to detect phishing attempts before users become victims.</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-title">Security Decision Assistant</span>
+            <span class="feature-desc">Provides step-by-step recommendations when users encounter suspicious messages or software downloads.</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-title">Personalized Risk Assessment</span>
+            <span class="feature-desc">Evaluates user behavior and security practices to generate personalized risk scores and improvement suggestions.</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-title">Cybersecurity Education</span>
+            <span class="feature-desc">Offers simple explanations, security tips, and awareness training tailored to the user's knowledge level.</span>
+          </div>
+          <div class="feature-item">
+            <span class="feature-title">Real-Time Alerts</span>
+            <span class="feature-desc">Notifies users immediately when potential threats or unusual activities are detected.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <h4>System Workflow</h4>
+        <ol>
+          <li>User interacts with digital content — emails, websites, or files</li>
+          <li>Sentinel-AI analyzes content for potential security threats</li>
+          <li>System identifies suspicious activities and evaluates risk levels</li>
+          <li>Users receive alerts and clear recommendations</li>
+          <li>Actionable guidance helps users respond safely</li>
+          <li>Security insights are recorded to improve future threat detection</li>
+        </ol>
+      </div>
+
+      <div class="modal-section">
+        <h4>Benefits</h4>
+        <ul>
+          <li>Makes cybersecurity accessible to non-technical users</li>
+          <li>Enhances awareness and security decision-making</li>
+          <li>Provides proactive protection against cyber threats</li>
+          <li>Reduces the likelihood of successful phishing and scam attacks</li>
+          <li>Builds user confidence in handling digital security challenges</li>
+        </ul>
+      </div>
+
+      <div class="modal-section">
+        <h4>Future Enhancements</h4>
+        <div class="modal-tags">
+          <span>Voice-Based Assistant</span>
+          <span>Multi-Language Support</span>
+          <span>Browser Extension</span>
+          <span>Org Security Integration</span>
+          <span>Behavioral Analytics</span>
+          <span>Automated Incident Response</span>
+        </div>
       </div>
     </div>
   </div>
